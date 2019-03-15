@@ -36,7 +36,7 @@ python test.py -N 2 test_output.csv picklefile
 
 Preplexity is the measure of how well an n-gram predict the next type in the given test set based on the training model.
 A good language model is something which predicts correctly. It usually gives high probability values and low preplexity scores.
-When the experiment is carried on the given data with 500 lines, the preplexity decreased as the n-grams increased until 4-gram model. For a 5-gram model it increased again. Froom the experiment carried, the 4-gram model predicts better than any othet n-gram model for the give data. Also when the size of data is reduced the preplexity is very less compared when using more data. This is not true in reality. A good language model should predict unseen data as well and smoothing techniques are used in such cases.
+When the experiment is carried on the given data with 500 lines, the preplexity decreased as the n-grams increased until 4-gram model. For a 5-gram model it increased again. From the experiment carried, the 4-gram model predicts better than any other n-gram model for the give data. Also when the size of data is reduced the preplexity is very less compared when using more data. This is not true in reality. A good language model should predict unseen data as well and smoothing techniques are used in such cases.
 
 ## Reporting for Part Bonus 
 
