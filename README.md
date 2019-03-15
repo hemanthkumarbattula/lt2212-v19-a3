@@ -1,4 +1,4 @@
-
+2
 68.18# LT2212 V19 Assignment 3
 
 From Asad Sayeed's statistical NLP course at the University of Gothenburg.
@@ -13,7 +13,7 @@ want us to know about running your code.
 ## Reporting for Part 4
 
 ### Examples to Run code:
-python gendata.py -S 1000 -E 1200 -T 120 brown-rga.txt output -N 5
+python gendata.py -S 1000 -E 1200 -T 120 brown-rga.txt output -N 2
 
 python train.py -N 2 train_output.csv picklefile
 
@@ -34,7 +34,7 @@ python test.py -N 2 test_output.csv picklefile
 ## Reporting for Part Bonus 
 
 ### Examples to Run code:
-python gendata.py -S 1000 -E 1500 -T 300 -N 2 -P brown-rga.txt output
+python gendata.py -S 1000 -E 1500 -T 300 -N 5 -P brown-rga.txt output
 
 python train.py -N 5 train_output.csv picklefile
 
