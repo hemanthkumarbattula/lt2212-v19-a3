@@ -1,3 +1,5 @@
+
+
 2
 68.18# LT2212 V19 Assignment 3
 
@@ -31,6 +33,11 @@ python test.py -N 2 test_output.csv picklefile
 | -S 1000 -E 1200 -T 120 -N 4      | 0.11168070303917979   | 51.32840216732968       |
 | -S 1000 -E 1200 -T 120 -N 5      | 0.11681109185441942   | 48.22276131048413       |
 
+
+Preplexity is the measure of how well an n-gram predict the next type in the given test set based on the training model.
+A good language model is something which predicts correctly. It usually gives high probability values and low preplexity scores.
+When the experiment is carried on the given data with 500 lines, the preplexity decreased as the n-grams increased until 4-gram model. For a 5-gram model it increased again. Froom the experiment carried, the 4-gram model predicts better than any othet n-gram model for the give data. Also when the size of data is reduced the preplexity is very less compared when using more data. This is not true in reality. A good language model should predict unseen data as well and smoothing techniques are used in such cases.
+
 ## Reporting for Part Bonus 
 
 ### Examples to Run code:
@@ -51,3 +58,6 @@ python test.py -N 5 test_output.csv picklefile
 | -E 2000 -T 300 -N 3 -P           | 0.3093707965924376    | 6.518799070883535       |
 | -E 2000 -T 300 -N 4 -P           | 0.3136860264519839    | 6.190062985593935       |
 | -E 2000 -T 300 -N 5 -P           | 0.31011826544021026   | 6.100597163573069       |
+
+
+When POS tags are used instead of the words, the preplexity is very less due to the very fact that there are very less number of POS tags and the trainging performed of the data is enough for guessing the next POS tag in a given sentence. But in case of using words, as labels its very difficult as it involves a lot of tarining on large amount of data. Also the accuracy here is more compared when using words.
